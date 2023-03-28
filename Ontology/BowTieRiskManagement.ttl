@@ -1,0 +1,185 @@
+@prefix : <http://ontology.tno.nl/onassis/RiskManagement#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://ontology.tno.nl/onassis/RiskManagement> .
+
+<http://ontology.tno.nl/onassis/RiskManagement> rdf:type owl:Ontology ;
+                                  dc:creator "Giulia Biagioni, Georgios Stathis, Bart Custers, Jaap van den Herik" ;
+                                  dcterms:description "This ontology contains classes and properties to model legal risk data" .
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ontology.tno.nl/onassis/RiskManagement#affects
+<http://ontology.tno.nl/onassis/RiskManagement#affects> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#Impact> ;
+                                                        rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                                                        rdfs:label "affects"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#basedOnSource
+<http://ontology.tno.nl/onassis/RiskManagement#basedOnSource> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain [ rdf:type owl:Class ;
+                                                                            owl:unionOf ( <http://ontology.tno.nl/onassis/RiskManagement#Impact>
+                                                                                          <http://ontology.tno.nl/onassis/RiskManagement#Probability>
+                                                                                        )
+                                                                          ] ;
+                                                              rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#Source> ;
+                                                              rdfs:label "based  on source"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#containedByProactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#containedByProactiveControl> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#Cause> ;
+                                                                            rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#ProactiveControl> ;
+                                                                            rdfs:label "contained by proactive control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#containedByReactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#containedByReactiveControl> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#Consequence> ;
+                                                                           rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#ReactiveControl> ;
+                                                                           rdfs:label "contained by reactive control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasCause
+<http://ontology.tno.nl/onassis/RiskManagement#hasCause> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                         rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#Cause> ;
+                                                         rdfs:label "has cause"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasConsequence
+<http://ontology.tno.nl/onassis/RiskManagement#hasConsequence> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                               rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#Consequence> ;
+                                                               rdfs:label "has consequence"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasImpact
+<http://ontology.tno.nl/onassis/RiskManagement#hasImpact> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                          rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#Impact> ;
+                                                          rdfs:label "has impact"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasProactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#hasProactiveControl> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                                    rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#ProactiveControl> ;
+                                                                    rdfs:label "has proactive control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasProbability
+<http://ontology.tno.nl/onassis/RiskManagement#hasProbability> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                               rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#Probability> ;
+                                                               rdfs:label "has probability"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#hasReactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#hasReactiveControl> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                                   rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#ReactiveControl> ;
+                                                                   rdfs:label "has reactive control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#involvesHazardousEvent
+<http://ontology.tno.nl/onassis/RiskManagement#involvesHazardousEvent> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://ontology.tno.nl/onassis#Risk> ;
+                                                                       rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> ;
+                                                                       rdfs:label "involves hazardous event"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#isInvolvedInRisk
+<http://ontology.tno.nl/onassis/RiskManagement#isInvolvedInRisk> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://ontology.tno.nl/onassis/RiskManagement#LevelOfRisk> ;
+                                                                 rdfs:range <http://ontology.tno.nl/onassis#Risk> ;
+                                                                 rdfs:label "is involved in risk"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#resultInLevelOfRisk
+<http://ontology.tno.nl/onassis/RiskManagement#resultInLevelOfRisk> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( <http://ontology.tno.nl/onassis/RiskManagement#Impact>
+                                                                                                <http://ontology.tno.nl/onassis/RiskManagement#Probability>
+                                                                                              )
+                                                                                ] ;
+                                                                    rdfs:range <http://ontology.tno.nl/onassis/RiskManagement#LevelOfRisk> ;
+                                                                    rdfs:label "result in level of risk"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontology.tno.nl/onassis#Risk
+<http://ontology.tno.nl/onassis#Risk> rdf:type owl:Class .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#Cause
+<http://ontology.tno.nl/onassis/RiskManagement#Cause> rdf:type owl:Class ;
+                                                      rdfs:label "Cause"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#Consequence
+<http://ontology.tno.nl/onassis/RiskManagement#Consequence> rdf:type owl:Class ;
+                                                            rdfs:label "Consequence"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent
+<http://ontology.tno.nl/onassis/RiskManagement#HazardousEvent> rdf:type owl:Class ;
+                                                               rdfs:label "Hazardous Event"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#Impact
+<http://ontology.tno.nl/onassis/RiskManagement#Impact> rdf:type owl:Class ;
+                                                       rdfs:label "Impact"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#LevelOfRisk
+<http://ontology.tno.nl/onassis/RiskManagement#LevelOfRisk> rdf:type owl:Class ;
+                                                            rdfs:label "Level of Risk"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#ProactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#ProactiveControl> rdf:type owl:Class ;
+                                                                 rdfs:label "Proactive Control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#Probability
+<http://ontology.tno.nl/onassis/RiskManagement#Probability> rdf:type owl:Class ;
+                                                            rdfs:label "Probability"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#ReactiveControl
+<http://ontology.tno.nl/onassis/RiskManagement#ReactiveControl> rdf:type owl:Class ;
+                                                                rdfs:label "Reactive Control"@en .
+
+
+###  http://ontology.tno.nl/onassis/RiskManagement#Source
+<http://ontology.tno.nl/onassis/RiskManagement#Source> rdf:type owl:Class ;
+                                                       rdfs:label "Source"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
