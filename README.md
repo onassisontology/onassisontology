@@ -21,4 +21,3 @@ The figure below shows example instiantions, and it shows the bow-tie shape whic
 Below is an example application of the Enriched Bow-Tie Ontology on a the case study of a Payment Risk:
 
 ![alt text](https://github.com/onassisontology/onassisontology/blob/main/img/Visualisation.png)
-
