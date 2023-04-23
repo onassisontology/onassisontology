@@ -10,10 +10,15 @@
 
 **Figure 2:** Visualization of the use case scenario modeled with Onassis's ontological expressiveness. In the figure, individuals are represented as rectangles. Their associated datatype values are highlighted in blue. Relationships are represented as arrows.
 
-Risks, and proactive controls to mitigate risks, can be further detailled and represented in the bow-tie ontology:
+Risks, and proactive controls to mitigate risks, can be further detailled and represented in the Enriched Bow-Tie Ontology:
 
 ![afbeelding](https://user-images.githubusercontent.com/89925569/228222956-597c0495-baef-4703-8411-bcb44c5603c8.png)
 
 The figure below shows example instiantions, and it shows the bow-tie shape which inspired the name of the ontology:
 
 ![afbeelding](https://user-images.githubusercontent.com/89925569/228223421-97f4377d-c70c-47b1-ba86-33e24e8c36b1.png)
+
+Below is an example application of the Enriched Bow-Tie Ontology on a the case study of a Payment Risk:
+
+![alt text](https://github.com/DjAzDeck/Onassis-Ontology/blob/main/img/Visualisation.png)
+
