@@ -1,0 +1,24 @@
+First, we conducted a deductive representation of timeline as Proactive Data.
+
+E1 = No Payment is a Hazardous Event
+E2 = Lack of Deadline is a Cause of No Payment
+E3 = Timeline is a Proactive Control of Lack of Deadline
+H = Timeline is a Proactive Control of No Payment
+
+Second, we conducted an inductive representation of timeline as Proactive Data.
+
+E1 = No Payment1 is a Hazardous Event1 AND Lack of Deadline1 is a Cause1 of No Payment1
+E2 = No Payment2 is a Hazardous Event2 AND Lack of Deadline2 is a Cause2 of No Payment2
+...
+E1000 = No Payment1000 is a Hazardous Event1000 AND Lack of Deadline1000 is a Cause1 of No Payment1000
+H1/E1001 = Lack of Deadline is a Cause of No Payment
+E1002 = Timeline is a Proactive Control for Lack of Deadline
+H2 = Timeline is a Proactive Control for No Payment
+
+Third, we conducted an abductive representation of timeline as Proactive Data.
+
+E1 = Timeline is a Proactive Control for the Lack of Deadline as Cause of the No Payment Hazardous Event (Q)
+E2 = If Timeline is applied as a proactive control the likelihood of the No Payment Hazardous Event reduces (F1), therefore Θ is true.
+E3 = When Timeline is applied as a proactive control the likelihood of the No Payment Hazardous Event reduces (Fn), therefore Θ is true.
+Therefore
+H = When Timeline is applied as a proactive control the likelihood of the No Payment Hazardous Event reduces (Fn)
