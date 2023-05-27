@@ -93,7 +93,7 @@ dcterms:description rdf:type owl:AnnotationProperty .
 
 
 ###  http://ontology.tno.nl/onassis#hasOrderNumber
-:hasOrderNumber rdf:type owl:ObjectProperty ;
+:hasOrderNumber rdf:type owl:DatatypeProperty;
                 rdfs:domain [ rdf:type owl:Class ;
                               owl:unionOf ( :Paragraph
                                             :Section
