@@ -14,7 +14,7 @@ Risks, and proactive controls to mitigate risks, can be further detailled and re
 
 ![afbeelding](https://user-images.githubusercontent.com/89925569/228222956-597c0495-baef-4703-8411-bcb44c5603c8.png)
 
-The figure below shows example instiantions, and it shows the bow-tie shape which inspired the name of the ontology:
+The figure below shows example instantiations, and it shows the bow-tie shape which inspired the name of the ontology:
 
 ![afbeelding](https://user-images.githubusercontent.com/89925569/228223421-97f4377d-c70c-47b1-ba86-33e24e8c36b1.png)
 
