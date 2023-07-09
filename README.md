@@ -1,4 +1,4 @@
-# An implementation of the ontology used in the paper <br/> "Towards a Foundation for Intelligent Contracts".
+# Repository of Intelligent Contracts: the Onassis Ontology and the Enriched Bow-Tie Ontology
 
 ## Onassis Ontology 
 
