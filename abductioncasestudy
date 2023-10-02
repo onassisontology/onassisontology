@@ -1,0 +1,12 @@
+E1 = What Proactive Controls should be established for the No Payment Hazardous Event? (Q)
+
+E2-1 = The Proactive Control of Timeline should be established because of the Lack of Deadline as Cause for the No Payment Hazardous Event (F1)
+E2-2 = The Proactive Control of Quality Control should be established because of the Quality Objection as Cause for the No Payment Hazardous Event (F2)
+E2-3 = The Proactive Control of Payment Plan should be established because of the Payment Default as Cause for the No Payment Hazardous Event (F3)
+E2-4 = The Proactive Control of Budget Screenshot should be established because of the Lack of Budget as Cause for the No Payment Hazardous Event (F4)
+
+E3 = Budget Screenshot is not a sufficiently secure Proactive Control because the information shown on a screenshot can be easily manipulated or because a budget may change easily since a screenshot is taken (~F4)
+
+E4 = The Proactive Controls of Timeline, Quality Control and Payment Plan should be established because of the Lack of Deadline, Quality Objection and Payment Default as Causes for the No Payment Hazardous Event (F1,2,3)
+
+H= The Proactive Controls of Timeline, Quality Control and Payment Plan should be established because of the Lack of Deadline, Quality Objection and Payment Default as Causes for the No Payment Hazardous Event (F1,2,3)
