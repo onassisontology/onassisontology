@@ -1,0 +1,25 @@
+Deductive Logic:
+
+In deductive logic, conclusions are derived from premises with absolute certainty. Here's a representation:
+
+Premise 1: Proactive controls aim to prevent or mitigate hazardous events.
+Premise 2: "No payment" is a hazardous event.
+Premise 3: Credit checks, payment terms, advance payments, and invoice verification are measures that can prevent "no payment."
+Conclusion: Therefore, proactive controls for the hazardous event of "no payment" include credit checks, payment terms, advance payments, and invoice verification.
+
+Inductive Logic:
+
+In inductive logic, conclusions are drawn based on patterns or observations. Here's a representation:
+
+Observation 1: Organizations that implement credit checks, payment terms, advance payments, and invoice verification tend to experience fewer instances of "no payment."
+Observation 2: These measures are commonly recommended as best practices for risk mitigation.
+Inductive Conclusion: Therefore, it can be inferred that proactive controls for the hazardous event of "no payment" include credit checks, payment terms, advance payments, and invoice verification.
+
+Abductive Logic:
+
+In abductive logic, conclusions are drawn based on the best explanation for observed evidence. Here's a representation:
+
+Observation: Organizations that employ credit checks, payment terms, advance payments, and invoice verification are often successful in preventing "no payment" incidents.
+Abductive Explanation: The best explanation for this observed success is that these measures are indeed proactive controls for preventing "no payment."
+
+Abductive logic suggests that the selected controls are the best explanation for observed outcomes, given the context and evidence available.
