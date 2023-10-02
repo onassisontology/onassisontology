@@ -1,0 +1,25 @@
+Deductive Logic:
+
+In deductive logic, conclusions are drawn based on established premises or known facts. Here, the answer follows deductively from the basic principles of arithmetic:
+
+Premise 1: 2 is a number.
+Premise 2: Addition is a mathematical operation.
+Premise 3: When you add 2 to 2 using the addition operation, the result is determined mathematically.
+Conclusion: Therefore, 2+2 is 4.
+
+Inductive Logic:
+
+In inductive logic, conclusions are drawn based on patterns or observations. Here, the answer can be represented as an inductive inference based on repeated observations:
+
+Observation 1: When you add 2 to 2 multiple times, the result is consistently 4.
+Observation 2: This pattern holds true in all instances we've observed.
+Inductive Conclusion: Therefore, it is likely that 2+2 is 4 in all cases.
+
+Abductive Logic:
+
+In abductive logic, conclusions are drawn based on the best explanation for observed evidence. Here, the answer can be represented as an abductive inference:
+
+Observation: When we perform the addition operation with 2 and 2, we consistently obtain the result 4.
+Abductive Explanation: The best explanation for this consistent result is that 2+2 is indeed 4.
+
+Abductive logic does not necessarily prove the answer but offers the most plausible explanation based on the available evidence.
